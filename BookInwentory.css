@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f8ff; 
+    margin: 0;
+    color: #333; 
+}
+
+h1 {
+    text-align: center;
+    color: #4682b4;  
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #b0e0e6; 
+}
+
+th {
+    background-color: #b0e0e6; 
+    color: #ffffff; 
+}
+
+td {
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+
+tr.read {
+    background-image: linear-gradient(to right, #add8e6, #87ceeb); 
+}
+
+tr.to-read {
+    background-image: linear-gradient(to right, #b0e0e6, #4682b4); 
+}
+
+tr.in-progress {
+    background-image: linear-gradient(to right, #aaf0d1, #7ec8b6); 
+}
+
+
+tr.to-read .status,
+tr.read .status,
+tr.in-progress .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+tr.to-read .status {
+    border: 2px solid #4682b4;
+    background-image: linear-gradient(to right, #4682b4, #87ceeb);
+}
+
+tr.read .status {
+    border: 2px solid #87ceeb;
+    background-image: linear-gradient(to right, #87ceeb, #add8e6);
+}
+
+tr.in-progress .status {
+    border: 2px solid #7ec8b6;
+    background-image: linear-gradient(to right, #7ec8b6, #aaf0d1);
+}
+
+span.rate {
+    display: inline-block;
+    height: 20px;
+    width: 100%; 
+    padding: 0; 
+    background-color: #d1e7f4; 
+    border-radius: 5px;
+    margin: 0 2px;
+    box-sizing: border-box; 
+}
+
+
+span.rate span {
+    display: inline-block;
+    height: 100%;
+    width: 33.333%; 
+    background-color: #b0e0e6; 
+    border-radius: 3px;
+    box-sizing: border-box; 
+}
+
+
+span.rate.one span:nth-child(1) {
+    background-image: linear-gradient(to right, #4682b4, #87ceeb); 
+}
+
+span.rate.two span:nth-child(1),
+span.rate.two span:nth-child(2) {
+    background-image: linear-gradient(to right, #b0e0e6, #4682b4); 
+}
+
+span.rate.three span:nth-child(1),
+span.rate.three span:nth-child(2),
+span.rate.three span:nth-child(3) {
+    background-image: linear-gradient(to right, #add8e6, #87ceeb); 
+}
+
+
+span.rate span {
+    border: 1px solid #ffffff; 
+    border-radius: 3px;
+    margin: 0;  
+}
+
+.status {
+    color: #ffffff;  
+    font-weight: bold;
+}
